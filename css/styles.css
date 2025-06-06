@@ -367,7 +367,7 @@ h1, h2, h3, h4, h5, h6, p {
     display: flex;
     box-sizing: border-box;
 
-    gap: 24px;
+
 }
 
 .icon-box-social .icon-social-link {
@@ -380,6 +380,14 @@ h1, h2, h3, h4, h5, h6, p {
     border-radius: 50%;
 
     background-color: var(--iris);
+}
+
+.box-container.team-card.icon-box-social {
+    flex-direction: column;
+}
+
+.box-container.team-card.icon-box-social .section-list {
+    padding: 0 16px;
 }
 
 .icon-box-social .icon-social-link:hover {
@@ -546,8 +554,8 @@ h1, h2, h3, h4, h5, h6, p {
     display: flex;
     box-sizing: border-box;
     flex-direction: row;
+    align-items: baseline
 
-    gap: 16px;
 }
 
 .icon-box-social.footer-icon-box .footer-container-icon .section-list {

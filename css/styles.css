@@ -85,7 +85,7 @@ h1, h2, h3, h4, h5, h6, p {
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.header-nav-list .link.current::before {
+.header-nav-list .link.current::after {
     content: "";
 
     position: absolute;
@@ -114,6 +114,10 @@ h1, h2, h3, h4, h5, h6, p {
     display: flex;
     align-items: center;
     gap: 40px;
+}
+
+.address-list .link {
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-logo {
@@ -188,17 +192,12 @@ h1, h2, h3, h4, h5, h6, p {
 
 .section-hero {
     display: flex;
+    max-width: 1440px;
     padding-top: 188px;
     padding-bottom: 188px;
     flex-direction: column;
-}
 
-.hero-container {
-    max-width: 1440px;
     background-size: cover;
-}
-
-.section-hero {
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/BG-Hero.jpg);
     background-repeat: no-repeat;
     background-size: 1440px 600px;
@@ -471,7 +470,7 @@ h1, h2, h3, h4, h5, h6, p {
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.portfolio-container .section-list .list-box:hover .portfolio-card {
+.section-portfolio .section-list .portfolio-card:hover {
     box-shadow:0px 1px 6px rgba(46, 47, 66, 0.08),
         0px 1px 1px rgba(46, 47, 66, 0.16),
         0px 2px 1px rgba(46, 47, 66, 0.08);

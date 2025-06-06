@@ -60,6 +60,9 @@ h1, h2, h3, h4, h5, h6, p {
 /* header */
 .header-page {
     border-bottom: 1px solid var(--cornflower);
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+        0px 1px 1px rgba(46, 47, 66, 0.16),
+        0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .header-container {
@@ -190,6 +193,11 @@ h1, h2, h3, h4, h5, h6, p {
     flex-direction: column;
 }
 
+.hero-container {
+    max-width: 1440px;
+    background-size: cover;
+}
+
 .section-hero {
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/BG-Hero.jpg);
     background-repeat: no-repeat;
@@ -239,6 +247,8 @@ h1, h2, h3, h4, h5, h6, p {
     height: 56px;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
     background: var(--iris);
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .section-hero .page-order-btn:hover, .section-hero .page-order-btn:focus {
     font-family: inherit;
@@ -458,6 +468,13 @@ h1, h2, h3, h4, h5, h6, p {
     background: var(--white);
     border: 1px solid var(--cornflower);
     border-top: none;
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.portfolio-container .section-list .list-box:hover .portfolio-card {
+    box-shadow:0px 1px 6px rgba(46, 47, 66, 0.08),
+        0px 1px 1px rgba(46, 47, 66, 0.16),
+        0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .footer-page {

@@ -547,24 +547,27 @@ h1, h2, h3, h4, h5, h6, p {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--white);
+
+    margin-bottom: 16px;
 }
 
 
-.icon-box-social.footer-icon-box .footer-container-icon {
+.icon-box-social.footer-icon-box.box-social-title.footer-container-icon {
     display: flex;
     box-sizing: border-box;
-    flex-direction: row;
+    flex-direction: column;
     align-items: baseline
 
 }
 
-.icon-box-social.footer-icon-box .footer-container-icon .section-list {
+.icon-box-social.footer-icon-box.box-social-title.footer-container-icon .section-list {
     display: flex;
+    flex-direction: row;
     gap: 16px;
 }
 
 
-.icon-box-social.footer-icon-box .footer-container-icon .section-list .list-icon {
+.icon-box-social.footer-icon-box.box-social-title.footer-container-icon .section-list .list-icon {
     display: inline-block;
 }
 

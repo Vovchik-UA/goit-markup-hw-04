@@ -550,6 +550,12 @@ h1, h2, h3, h4, h5, h6, p {
     gap: 16px;
 }
 
+.icon-box-social.footer-icon-box .footer-container-icon .section-list {
+    display: flex;
+    gap: 16px;
+}
+
+
 .icon-box-social.footer-icon-box .footer-container-icon .section-list .list-icon {
     display: inline-block;
 }

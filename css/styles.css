@@ -196,12 +196,14 @@ h1, h2, h3, h4, h5, h6, p {
     padding-top: 188px;
     padding-bottom: 188px;
     flex-direction: column;
+    flex-wrap: wrap;
 
-    background-size: cover;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/BG-Hero.jpg);
     background-repeat: no-repeat;
-    background-size: 1440px 600px;
+    background-size: cover;
     background-position: 50% 50%;
+    margin: 0 auto;
+
 }
 
 .section-hero .page-title {
@@ -470,7 +472,7 @@ h1, h2, h3, h4, h5, h6, p {
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.section-portfolio .section-list .portfolio-card:hover {
+.portfolio-container .section-list .list-box:hover .portfolio-card{
     box-shadow:0px 1px 6px rgba(46, 47, 66, 0.08),
         0px 1px 1px rgba(46, 47, 66, 0.16),
         0px 2px 1px rgba(46, 47, 66, 0.08);
@@ -540,11 +542,16 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 
-.footer-container-icon {
+.icon-box-social.footer-icon-box .footer-container-icon {
     display: flex;
     box-sizing: border-box;
+    flex-direction: row;
 
     gap: 16px;
+}
+
+.icon-box-social.footer-icon-box .footer-container-icon .section-list .list-icon {
+    display: inline-block;
 }
 
 .footer-page .footer-icon {
